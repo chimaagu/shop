@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:shop_app/AppStyles/appColors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   clearSplash() async{
     Timer(const Duration(seconds: 2), () {
-Navigator.pushNamedAndRemoveUntil(context, "onboarding1", (route) => false);
+Navigator.pushNamedAndRemoveUntil(context, "sign_in", (route) => false);
     });
   }
 
@@ -24,12 +26,13 @@ Navigator.pushNamedAndRemoveUntil(context, "onboarding1", (route) => false);
   }
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      backgroundColor: AppColor().primaryColor,
       body: Center(
         child: Text(
           "sHoP",
-          style: TextStyle(
-            color: Colors.yellow,
+          style: GoogleFonts.poppins(
+            color: Colors.white,
             fontWeight: FontWeight.w900,
             fontSize: 70,
           ),

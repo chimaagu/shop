@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shop_app/Screens/Authentication/sign_in_page.dart';
+import 'package:shop_app/Screens/Authentication/sign_in_password.dart';
 import 'package:shop_app/Screens/OnboardingScreens/onBoarding1.dart';
 import 'package:shop_app/Screens/splash_screen.dart';
 
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const SplashScreen(),
-        "onboarding1": (context) => const OnboardingOne()
+        "onboarding1": (context) => const OnboardingOne(),
+        "sign_in": (context) => const SignInPage(),
+        "sign_in_password": (context) => const SignInPassword(),
 
       },
     );
