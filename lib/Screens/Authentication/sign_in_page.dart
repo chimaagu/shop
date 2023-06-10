@@ -29,9 +29,11 @@ class _SignInPageState extends State<SignInPage> {
             ),
             const SizedBox(height: 35),
             const CustomTextField(hintText: "Email Address"),
+            const SizedBox(height: 10),
+            const CustomTextField(hintText: "Password"),
             const SizedBox(height: 20),
             CustomButton(
-              onTap: () => Navigator.pushNamed(context, "sign_in_password"),
+              onTap: () => Navigator.pushNamed(context, "base_page"),
             ),
             const SizedBox(height: 15),
             RichText(
@@ -39,13 +41,14 @@ class _SignInPageState extends State<SignInPage> {
                 children: [
                   TextSpan(
                     text: "Don't have an account? ",
-                    style: GoogleFonts.poppins(fontSize: 12),
+                    style: GoogleFonts.poppins(fontSize: 12, color: Colors.white),
                   ),
                   TextSpan(
                     text: "Create one",
                     style: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
+                      color: Colors.white
                     ),
                   ),
                 ],

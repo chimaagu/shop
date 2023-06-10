@@ -19,7 +19,7 @@ class _SignInPasswordState extends State<SignInPassword> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              "Sign In",
+              "Sign Up",
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w700,
@@ -28,7 +28,26 @@ class _SignInPasswordState extends State<SignInPassword> {
             ),
             const SizedBox(height: 35),
             const CustomTextField(
-              hintText: "Password",
+              hintText: "First Name",
+            ),
+            const SizedBox(height: 10),
+            const CustomTextField(
+              hintText: "Last Name",
+            ),
+            const SizedBox(height: 10),
+
+            const CustomTextField(
+              hintText: "Username Name",
+            ),
+            const SizedBox(height: 10),
+
+            const CustomTextField(
+              hintText: "Email Address",
+            ),
+            const SizedBox(height: 10),
+
+            const CustomTextField(
+              hintText: "Phone Number",
             ),
             const SizedBox(height: 20),
             CustomButton(
@@ -39,14 +58,15 @@ class _SignInPasswordState extends State<SignInPassword> {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "Forgot Password? ",
-                    style: GoogleFonts.poppins(fontSize: 12),
+                    text: "Already have an account? ",
+                    style: GoogleFonts.poppins(fontSize: 12, color: Colors.white),
                   ),
                   TextSpan(
-                    text: "Reset",
+                    text: "Sign In",
                     style: GoogleFonts.poppins(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
+                      color: Colors.white
                     ),
                   ),
                 ],
