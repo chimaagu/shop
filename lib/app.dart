@@ -19,14 +19,13 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
         primarySwatch: Colors.blue,
       ),
-
       initialRoute: "/",
       routes: {
         "/": (context) => const SplashScreen(),
         "onboarding1": (context) => const OnboardingOne(),
         "sign_in": (context) => const SignInPage(),
         "sign_in_password": (context) => const SignInPassword(),
-        "base_page":(context) => const BasePage(),
+        "base_page": (context) => const BasePage(),
       },
     );
   }
